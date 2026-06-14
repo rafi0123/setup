@@ -1,18 +1,9 @@
-import 'dart:async';
+import 'package:counter/app/bootstrap.dart';
+import 'package:counter/core/enum/flavors.dart';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-import 'app.dart';
-import 'flavors.dart';
-
-void main() {
-  F.appFlavor = Flavor.values.firstWhere(
-    (element) => element.name == appFlavor,
-  );
-
-  runApp(const App());
-}
+// Fallback entry point — defaults to dev
+// Normally you always run via main_dev.dart or main_prod.dart
+void main() => runAppWithFlavor(Flavor.dev);
 
 /// running flutter app after success
 // # Run dev flavor

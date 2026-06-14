@@ -1,0 +1,21 @@
+# Which locale is the base/fallback
+base_locale: en
+
+# Where your translation files live
+input_directory: lib/i18n
+
+# Where slang puts the generated file
+output_directory: lib/generated
+output_file_name: strings.g.dart
+
+# Automatically handles RTL/LTR per locale
+translate_var: t
+# how you access translations: t.hello
+enum_name: AppLocale
+# the locale enum name
+
+# Fallback to English if a key is missing in Arabic
+fallback_strategy: base_locale_empty_string
+
+# every time you add new text run command
+# dart run slang
