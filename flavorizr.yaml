@@ -1,0 +1,37 @@
+#  dart run flutter_flavorizr
+#  run this command after all setup
+flavors:
+
+  # ── DEV flavor ──────────────────────────────────────────────
+  dev:
+    app:
+      name: "MyApp Dev"
+
+    android:
+      applicationId: "com.example.counter"
+      # icon: "assets/images/icon_dev.png"   ← uncomment when you have icons ready
+#      firebase:
+#        config: ".firebase/dev/google-services.json"
+
+    ios:
+      bundleId: "com.example.counter"
+      # icon: "assets/images/icon_dev.png"   ← uncomment when you have icons ready
+#      firebase:
+#        config: ".firebase/dev/GoogleService-Info.plist"
+
+    # ── PROD flavor ─────────────────────────────────────────────
+    prod:
+      app:
+        name: "MyApp"
+
+      android:
+        applicationId: "com.example.counter"
+        # icon: "assets/images/icon_prod.png"
+#      firebase:
+#        config: ".firebase/prod/google-services.json"
+
+      ios:
+        bundleId: "com.example.counter"
+        # icon: "assets/images/icon_prod.png"
+#      firebase:
+#        config: ".firebase/prod/GoogleService-Info.plist"
