@@ -1,6 +1,5 @@
 part of 'config.dart';
 
-
 /// App-wide configuration values based on the current flavor.
 class FlavorConfig {
   // ─── API ─────────────────────────────────────────────────────
@@ -18,6 +17,7 @@ class FlavorConfig {
   static bool get useFirebaseEmulator => F.appFlavor == Flavor.dev;
 
   // ─── Helpers ─────────────────────────────────────────────────
-  static bool get isDev  => F.appFlavor == Flavor.dev;
+  static bool get isDev => F.appFlavor == Flavor.dev;
+
   static bool get isProd => F.appFlavor == Flavor.prod;
 }

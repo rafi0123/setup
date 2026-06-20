@@ -1,4 +1,5 @@
 part of 'config.dart';
+
 /// A utility class for managing the application's flavor configuration.
 class F {
   /// The current flavor of the application, set during initialization.
